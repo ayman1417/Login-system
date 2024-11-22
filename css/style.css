@@ -1,0 +1,115 @@
+:root {
+    --main-color: #24353F;
+    --sec-color: #1C7788;
+    --third-color: #1e2b33;
+}
+
+
+.bg-main {
+    background-color: var(--main-color);
+
+}
+.bg-sec {
+    background-color: var(--third-color);
+
+}
+
+.shadow-main {
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 1);
+
+}
+
+.sec-colr {
+    color: var(--sec-color);
+
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.w-48 {
+    width: 48%;
+}
+
+
+.form-parent {
+    position: relative;
+    transition-duration: 1s;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 1);
+    /* Adjust the shadow as needed */
+}
+
+
+
+input::placeholder {
+    color: white;
+}
+
+input {
+    border: 1px white solid;
+    outline: none;
+    /* Ensure outline is completely removed */
+    transition-duration: .1s;
+}
+
+input:focus {
+    border: 2px var(--sec-color) solid;
+    outline: none;
+    /* Ensure outline is completely removed */
+}
+
+
+form button {
+    width: 100%;
+    background-color: transparent;
+    border: solid 2px var(--sec-color);
+    transition-duration: .5s;
+}
+
+form button:hover {
+    background-color: var(--sec-color);
+    color: white;
+}
+
+
+
+
+
+
+.go-right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border: 2px solid var(--sec-color);
+    border-radius: 5px;
+    left: 50%;
+    top: 0;
+    transition-duration: 1s;
+}
+
+
+.go-left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border: 2px solid var(--sec-color);
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    transition-duration: 1s;
+}
+
+
+
+#door button {
+    /* width: 100%; */
+    background-color: transparent;
+    border: solid 2px var(--sec-color);
+    transition-duration: .5s;
+}
+
+#door button:hover {
+    background-color: var(--sec-color);
+    color: white;
+}
